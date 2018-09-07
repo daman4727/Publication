@@ -1,0 +1,119 @@
+AUTOMATIC SPACE CLEANING SYSTEM
+Author: Aman Deep, Aditya Tiwari, Vivek Singh
+Mentor: Mrs. Anupama Kiran
+Department of Software Engineering, SRM University, Kattankulathur, Chennai-603203
+Email ID – amandeep.amandeep2010@gmail.com, aditytiwari_ra@srmuniv.edu.in, viveksingh_ar@srmuniv.edu.in
+  
+Abstract - Space fragments, junk, trash, garbage, or debris is the collection of obsolete artificial entities in space – old satellites, consumed rocket phases, and debris from fragmentation, corrosion, and crashes – including those caused by debris itself. Orbital fragments or 'space debris ' consists of artificial objects of variable size and structure that revolve around the earth. These comprise space vehicles that are no longer active, entities used by spaceships during their operations, and debris generated when they were obliterated. There is an urgent need of cleaning because space could soon become too dangerous to visit unless deserted and damaged rockets and satellites are removed from orbit.
+ 
+
+Index Terms- 3D Debris Scanner, Electromagnetic Surge, Magnetic Net, Huffing
+I.INTRODUCTION
+It is based on the cleaning of space to improve the mobility of satellites and space craft that we launch from the ground. Our research focuses on debris deduction and analyzing its path and speed so that appropriate methods can be used to destroy the debris.
+ 
+Space Debris
+The escalating population of space rubble elevates the risk and probable danger to all space vehicles, all future space endeavors, but especially to the ISS, space shuttles, capsules and other crafts with people aboard. It can prove very costly and lethal if this issue is not resolved.
+They all sail at very high speeds up to 28,000 kph, fast enough for a pretty small piece of orbital fragment to cause huge non-repairable damage to a satellite or a spacecraft.
+Space rubbles includes both natural (meteoroid) and artificial particles. Orbital Fragments are artificial debris which rotate about the earth. 	
+
+Several collision evasion tactics with the shuttle and the station have been performed during the past 10 years. This may increase if something isn’t done to clean the space.
+Therefore, to reduce the problems caused due to these space debris, Automatic Space Cleaning System (ASCS) is designed.
+ASCS will use the four major techniques to deal with the cleaning of space, those are:
+1.	Magnetic Net
+2.	Electromagnetic Surging
+3.	Electromagnetic Tethering
+4.	Huffing
+This will all be possible with the help of different crucial components such as 3D Debris Scanner, Trajectory and Motion Analyzer (TMA), Power Control Unit (PCU), Arithmetic and Logical Unit (ALU), and many others.
+The system can be accessed by dual Administrators and the administrator can grant the usage rights to multiple other users. Backdoor Administrator is present and its job is to troubleshoot and repair the systems, and bring it to its default state when necessary.
+TMA’s job is to calculate the trajectory and motion of the spacecraft and provide a path for its movement.
+PCU checks and determines whether the sufficient power is available in the power core or not.
+ALU does all the basic Calculations and stores all the million essential Algorithms to process many different tasks.
+3D scanner scans the debris and extracts all the information from the scan such as debris size, type, etc. It can be described as the Super eye of the craft.
+Many space organizations of different countries have already started working on this project, such as NASA of USA, Switzerland’s EPFL with their Clean Space One mission, and Japan’s JAXA.
+SOAR returns back to its spaceport after launching its payload, which could be located at Canada, Spain or United States or in the other sites of Morocco and Malaysia.
+II. PROPOSED SYSTEM
+It’s a new, self-contained product that is currently not available in the market and JAXA, EPFL and NASA are working on it.
+
+The main functions are:-
+●	3D scanning for finding the size, projectile, path and speed of the debris.
+●	Calculating trajectory for determining the position.
+The product is almost automatic, so there is not much that user has to do that can be characterized. Moreover, those who are on the brighter side of technology are the core user of this.
+Software and hardware both are working in the same environment that is space. Hardware is linked with software that can automatically determine the size, type, speed of the debris, and destroy them accordingly.
+    The issues which developer faces are-
+●	Power availability.
+●	Making it work for longer duration.
+●	High-level programming standards are used.
+●	Size of the satellite.
+Assumed factors are-
+●	The satellite will identify the path of the debris all around it.
+●	It gave priority to destroy nearest one.
+●	The reaction time of satellite is less.
+-Sequence Diagram (Boot Successful)-
+1.	External Interface Requirements
+1.1	User Interfaces
+It will display list of all operations except automated commands, i.e., Booting, Trouble Shooting, Trajectory determination, Size and Path determination. 
+Full Administrator Access will only be granted to Backdoor Administrator.
+1.2	Hardware Interfaces
+-Command Antenna, Communication Antenna, Solar Cells, Radio Receivers and transmitter, Multi-directional Rocket Thrusters, Camera, Main Rocket Motor, Search and Rescue Antenna, Telemetry Antenna, X-Ray Sensors, Magneto Meter, Periscope, Beam Forming Networks, Proximity Sensors, Gyroscope Sensor, Infra-Red sensors.      
+1.3	Software Interfaces
+Yet to be developed. NASA estimates the deployment of the software prototype by the year 2019 and an actual working software by 2020.
+1.4	Communications Interfaces
+The host user will communicate with controller using uplink connections to the Remote Controller. 
+
+--Use Case Diagram-
+Sequence Diagram (Boot process to counter errors)-
+2.	System Features
+2.1	3D Debris Scanner
+2.1.1	Description and Priority
+It is used for determining the size and speed of the debris. In addition, it tells the relative distance of the debris from satellite. The highest priority is given to the nearest debris.
+2.1.2	Functional Requirements
+Firstly the scanner will scan the debris to identify the speed and size of the debris and then generate a signal to the host so that it can deploy suitable methods to initialize TMA and then destroy the debris.
+2.2	Trajectory and Motion Analyzer (TMA)
+2.2.1	Description and Priority
+It is used for determining the position and path of the debris and setup the satellite to perform the desired functions.
+2.2.2	Functional Requirements
+Firstly, it will find the trajectory of the debris and then the path of the incoming debris. Based on that data the satellite will position itself and destroy the debris. 
+ 
+-Collaboration Diagram-
+3.	Other Nonfunctional Requirements
+3.1	Safety Requirements
+The satellite should be made fire resistant and should survive the space storms so that it can be in working stage for at least 10 years. Further, the satellite should be aware of surrounding so that a fast moving debris cannot strike it, if struck may result to a great loss.
+3.2	Security Requirements
+Only limited highly authorized users and that to should undergo various security checkpoints that includes fingerprint scanning and password are to be matched can access the software.   
+
+TMA’s job is to calculate the trajectory and motion of the spacecraft and provide a path for its movement. 
+PCU checks and determines whether the sufficient power is available in the power core or not. 
+ALU does all the basic Calculations and stores all the million essential Algorithms to process many different tasks.
+3D scanner scans the debris and extracts all the information from the scan such as debris size, type, etc. It can be described as the Super eye of the craft.
+ 
+- Deployment Diagram-
+               III. TECHNIQUES
+ASCS uses the four major techniques to deal with the cleaning of space, those are:
+1.	Magnetic Net:     
+ASCS will use the net when the debris is average in size and is travelling at relatively small speed. It is the same as fishing in a sea. It is very effective on magnetic debris. The net can be deployed to catch old or broken satellites, debris which have high important mineral content etc.
+
+2.	Electromagnetic Surging:
+The ASCS will have a very powerful Electromagnetic gun, which releases high intensity electromagnetic beam. When the beam is fired on the debris, it will be destroyed, or disintegrate into much smaller debris which is relatively poses very less danger.
+
+3.	Electromagnetic Tethering:
+When the debris is very large, but has lower density then this technique is used. ASCS can disintegrate or break the debris into smaller pieces using this method. Then it can use other techniques to remove it from the space.
+
+4.	Huffing: The ASCS will have a claw which can hold, catch, throw, push and drag debris in the space. In this technique, ASCS uses this claw to manipulate the Debris’ movements and push it in the earth’s atmosphere so that it can burn on its way down. This technique is not suitable for very Large debris, but is effective with the debris travelling at higher relative speeds. The claw can also be used to drag a broken satellite to ISS for repair.
+
+IV. CONCLUSION
+This project is based on Space Cleaning. The software is currently under construction, collaboration with NASA and ESA. The working outline of this software is by scanning the size, type, and magnetic behavior of the debris. Based on the data obtained the debris is destroyed. I hear by conclude this project and appreciate the work of the team members.
+
+V. REFERENCE
+1.	http://www.space.com/35059-japan-space-junk-tether-tech.html
+2.	http://www.space.com/23049-space-junk-satellite-swiss-space-plane.html
+3.	http://www.space.com/22969-space-junk-clean-up-ideas-incredible-technology.html
+4.	http://timesofindia.indiatimes.com/home/science/Japan-to-test-fishing-mesh-to-catch-space-junk/articleshow/55723299.cms
+5.	http://www.theverge.com/2017/2/6/14530348/jaxa-kounotori-space-junk-mission-failure
+6.	https://www.nasa.gov/directorates/spacetech/niac/gregory_space_debris_elimination.html
+7.	https://www.theguardian.com/science/2016/jul/04/space-junk-cleanup-mission-remove-debris-prepares-for-launch
+8.	http://www.space.com/24895-space-junk-wild-clean-up-concepts.html
+9.	http://espace.epfl.ch/CleanSpaceOne_1
+10.	http://global.jaxa.jp/projects/rockets/htv/
+11.	http://blogs.esa.int/cleanspace/
+12.	http://www.esa.int/Our_Activities/Space_Engineering_Technology/Clean_Space
+13.	Book - Unified Modeling Language User Guide by Grady Booch
